@@ -35,7 +35,8 @@ const ThoughtSchema = new Schema(
             type: String,
             required: 'This field is required!',
             minLength: 1,
-            maxLength: 280
+            maxLength: 280,
+            trim: true
         },
         createdAt: {
             type: Date,
